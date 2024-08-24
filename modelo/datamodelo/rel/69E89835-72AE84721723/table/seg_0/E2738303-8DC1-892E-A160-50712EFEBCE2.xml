@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2738303-8DC1-892E-A160-50712EFEBCE2" name="Curso">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>9598A6A7-474B-4032-AD83-F2ABD834CAC0</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_curso" id="BCB4F159-C74D-0D67-ABEF-1DE8D1548000">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>1702C602-9C77-E279-E000-8FA7A07BDA6A</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="F14BB689-706E-F445-5177-6E0A1E748D2A">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>76B49810-5A08-B74E-D792-422BD0D37900</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="A16D2165-E754-BDE9-BACA-EAA35F726E05">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>DDB35757-3ACF-E729-A537-E5EDBE4B2920</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A8507EB-0889-E904-9098-B35054DA2550" name="Curso_PK">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>AF560D3A-B2DA-E33E-0264-9F84F6928B73</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCB4F159-C74D-0D67-ABEF-1DE8D1548000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

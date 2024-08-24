@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E15FA035-2E02-3172-2298-56F82A5D1C08" name="Curso_Professor">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:45:08 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_curso_professor" id="5EC4B3F3-795F-4D1F-BF97-5680EC21916A">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:45:29 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_curso" id="027AF76A-0828-DDDA-4C42-68D1981C8A28">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:47:16 UTC</createdTime>
+<generatorID>664C8AB4-E54F-1333-C204-73FDAB2CA6F8</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="true"/>
+</engineerTo>
+<referedAttribute>1702C602-9C77-E279-E000-8FA7A07BDA6A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_professor" id="63981160-D1B9-641B-6C23-37C0A6CB4F99">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:43 UTC</createdTime>
+<generatorID>F04B3363-3035-C515-5455-E04C06A8ABAB</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="true"/>
+</engineerTo>
+<referedAttribute>9FE9F77F-D1FF-E0CC-D776-76B802E1687D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FD927F46-BF3E-2A2D-0DC5-2310C5B10E62" name="Curso_Professor PK">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:47:21 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5EC4B3F3-795F-4D1F-BF97-5680EC21916A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

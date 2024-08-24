@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F709EF84-F1B9-288D-F499-3D74CBC856B2" name="Curso_Professor">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>E15FA035-2E02-3172-2298-56F82A5D1C08</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_curso_professor" id="3EEACF80-FB28-209C-19CB-F5E75CB3649E">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>5EC4B3F3-795F-4D1F-BF97-5680EC21916A</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Curso_cd_curso" id="FD8685B2-09A6-2496-68DA-3F7FC1A7F79C">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>027AF76A-0828-DDDA-4C42-68D1981C8A28</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F61C30D9-72D9-AB8C-0B4B-F4EEC79243A9" referredColumn="BCB4F159-C74D-0D67-ABEF-1DE8D1548000"/>
+</associations>
+</Column>
+<Column name="Professor_cd_professor" id="113F91FD-E582-E18A-B532-A7AEAC6C18B5">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>63981160-D1B9-641B-6C23-37C0A6CB4F99</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5EF279E-48C4-F17D-1010-9A2D85DB2B57" referredColumn="8CED5EEB-ECD3-04B7-29F6-4855E6991790"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="488E4616-8E0F-4B2A-0823-4FD5E5114C9F" name="Curso_Professor_PK">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>FD927F46-BF3E-2A2D-0DC5-2310C5B10E62</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EEACF80-FB28-209C-19CB-F5E75CB3649E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A94B568-7080-2A5A-7018-5F31ABEE2D0C" name="Curso_Professor_Curso_FK">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>664C8AB4-E54F-1333-C204-73FDAB2CA6F8</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD8685B2-09A6-2496-68DA-3F7FC1A7F79C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65EF4E7B-DBD2-A3EE-20BF-6C0897FC3CC3" name="Curso_Professor_Professor_FK">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>F04B3363-3035-C515-5455-E04C06A8ABAB</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="113F91FD-E582-E18A-B532-A7AEAC6C18B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

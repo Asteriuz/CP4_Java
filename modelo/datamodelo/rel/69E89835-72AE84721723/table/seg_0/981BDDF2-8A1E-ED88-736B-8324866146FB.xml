@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="981BDDF2-8A1E-ED88-736B-8324866146FB" name="Estudante">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>E413C03A-70E9-709B-8BA7-FB886A453F25</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_estudante" id="E56F3407-49C2-59E1-3BA5-473FB594EFEF">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>94FC71F7-B7A7-95B5-21B7-686B6F751E6B</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="9405C2AF-807D-2B5C-6A8A-C15F7D0A98B1">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>A823874D-2D96-01A4-56BB-BB40A76855A6</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="7B76B20D-BF52-8731-1F3E-F0C0D65EF12D">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>BD170276-B303-5C2B-ABEC-D472444BBD0D</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone" id="82BE2D52-338F-EA50-18C0-D4983F9F3260">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>DA458A60-75C7-3D8D-72FA-04DAE68F6BEB</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Curso_cd_curso" id="031FFD81-94D2-8C8F-20C3-E569BAE921CE">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>1B298A3B-02E5-C8BA-D91C-58EFD7BFC7C6</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78AF9099-0E6A-7AB1-B4DD-CB58C7E55179" referredColumn="BCB4F159-C74D-0D67-ABEF-1DE8D1548000"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5798B9D1-CFDD-2C0A-DF2C-AF856536CE5E" name="Estudante_PK">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>F4883755-C697-8AB9-50C1-F2B0F58AD341</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E56F3407-49C2-59E1-3BA5-473FB594EFEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="608A64ED-B428-751F-262B-484F1329D38F" name="Estudante_Curso_FK">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>0F0838AA-ED9D-3F18-C7D1-51A7704A2B1B</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="031FFD81-94D2-8C8F-20C3-E569BAE921CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

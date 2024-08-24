@@ -1,0 +1,446 @@
+{
+    "info": {
+        "_postman_id": "34d910f5-1013-4450-ae7f-4832be708e32",
+        "name": "CP4",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "User",
+            "item": [
+                {
+                    "name": "Login",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:8080/auth/login",
+                            "path": [
+                                "auth",
+                                "login"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "header": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Thunder Client (https://www.thunderclient.com)",
+                                "disabled": true
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n    \"login\": \"teste@teste.com\",\n    \"password\": \"123\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Register",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:8080/auth/register",
+                            "path": [
+                                "auth",
+                                "register"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "header": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Thunder Client (https://www.thunderclient.com)",
+                                "disabled": true
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n    \"login\": \"teste@teste.com\",\n    \"password\": \"123\",\n    \"role\": \"ADMIN\",\n    \"name\": \"Teste\"\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Task",
+            "item": [
+                {
+                    "name": "List",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:8080/tasks",
+                            "path": [
+                                "tasks"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "header": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Thunder Client (https://www.thunderclient.com)",
+                                "disabled": true
+                            }
+                        ],
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI4OTh9.koXd2CMN4ESa9WeuYXGyZgBD6gABIhh-R5Mc-uN2pYY",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Create",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:8080/tasks",
+                            "path": [
+                                "tasks"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "header": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Thunder Client (https://www.thunderclient.com)",
+                                "disabled": true
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"title\": \"Estudar Java\",\n  \"description\": \"4 Pilares do POO\",\n  \"status\": \"Pendente\",\n  \"deadline\": \"2024-12-31\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJhdWd1c3RvQHRlc3RlLmNvbSIsImV4cCI6MTcyNDUwNTQ2MH0.flvGV9PpHQSPcaR9oANCfx8dhiI3dj8JI__cuFESWxg",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Search",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:8080/tasks/1",
+                            "path": [
+                                "tasks",
+                                "1"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "header": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Thunder Client (https://www.thunderclient.com)",
+                                "disabled": true
+                            }
+                        ],
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI4OTh9.koXd2CMN4ESa9WeuYXGyZgBD6gABIhh-R5Mc-uN2pYY",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Update",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://localhost:8080/tasks/1",
+                            "path": [
+                                "tasks",
+                                "1"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "header": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Thunder Client (https://www.thunderclient.com)",
+                                "disabled": true
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"title\": \"Estudar Java\",\n  \"description\": \"4 Pilares do POO\",\n  \"status\": \"Pendente\",\n  \"deadline\": \"2024-12-31\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI4OTh9.koXd2CMN4ESa9WeuYXGyZgBD6gABIhh-R5Mc-uN2pYY",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://localhost:8080/tasks/1",
+                            "path": [
+                                "tasks",
+                                "1"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "header": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Thunder Client (https://www.thunderclient.com)",
+                                "disabled": true
+                            }
+                        ],
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDU1MzF9.uJgtXfMJbmGpEpZ5PsMj3btJGyGgam7QKqflNRT154U",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Status",
+            "item": [
+                {
+                    "name": "List",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:8080/public/status",
+                            "path": [
+                                "public",
+                                "status"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "header": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Thunder Client (https://www.thunderclient.com)",
+                                "disabled": true
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Create",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:8080/public/status",
+                            "path": [
+                                "public",
+                                "status"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "header": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Thunder Client (https://www.thunderclient.com)",
+                                "disabled": true
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\": \"Teste\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI2Mzh9.9Lzk-1mEkO2Lx8bVQjYP6mKiWhgLNR-1dJx8EAfx2O8",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Search",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:8080/public/status/1",
+                            "path": [
+                                "public",
+                                "status",
+                                "1"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "header": [
+                            {
+                                "key": "User-Agent",
+                                "value": "Thunder Client (https://www.thunderclient.com)",
+                                "disabled": true
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Update",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://localhost:8080/public/status/4",
+                            "path": [
+                                "public",
+                                "status",
+                                "4"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\": \"Em espera\"\n}"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI2Mzh9.9Lzk-1mEkO2Lx8bVQjYP6mKiWhgLNR-1dJx8EAfx2O8",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Delete",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://localhost:8080/public/status/4",
+                            "path": [
+                                "public",
+                                "status",
+                                "4"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080"
+                        },
+                        "auth": {
+                            "type": "bearer",
+                            "bearer": [
+                                {
+                                    "key": "token",
+                                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI2Mzh9.9Lzk-1mEkO2Lx8bVQjYP6mKiWhgLNR-1dJx8EAfx2O8",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

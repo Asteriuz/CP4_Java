@@ -1,0 +1,299 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "CP4",
+    "collectionId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+    "dateExported": "2024-08-24T11:20:44.293Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "6c572fa5-13c5-4ccc-8cb2-6683b8ef6cb7",
+            "name": "Status",
+            "containerId": "",
+            "created": "2024-08-24T10:26:08.279Z",
+            "sortNum": 5000
+        },
+        {
+            "_id": "11413d8b-720b-416c-8915-69f1b20aea70",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-08-23T00:58:56.685Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "fb953a19-af79-44ca-b54b-ee63861e9549",
+            "name": "Task",
+            "containerId": "",
+            "created": "2024-08-23T02:40:39.477Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "bcf0c8ab-a44f-45c3-b8f0-a23b458c9172",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "11413d8b-720b-416c-8915-69f1b20aea70",
+            "name": "Login",
+            "url": "http://localhost:8080/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-08-23T00:59:02.095Z",
+            "modified": "2024-08-24T11:18:51.360Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"login\": \"teste@teste.com\",\n    \"password\": \"123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "07fd02a7-0280-4cf4-9f39-2115ce904938",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "6c572fa5-13c5-4ccc-8cb2-6683b8ef6cb7",
+            "name": "List",
+            "url": "http://localhost:8080/public/status",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-08-24T10:26:25.638Z",
+            "modified": "2024-08-24T10:29:46.951Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "56e749c1-4714-440a-b00f-be6506f36005",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "6c572fa5-13c5-4ccc-8cb2-6683b8ef6cb7",
+            "name": "Search",
+            "url": "http://localhost:8080/public/status/1",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-08-24T10:31:11.087Z",
+            "modified": "2024-08-24T10:34:29.221Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "fb4c21b6-cc4a-4cc1-8048-eb9997279511",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "11413d8b-720b-416c-8915-69f1b20aea70",
+            "name": "Register",
+            "url": "http://localhost:8080/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-23T00:59:48.910Z",
+            "modified": "2024-08-24T11:18:58.965Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"login\": \"teste@teste.com\",\n    \"password\": \"123\",\n    \"role\": \"ADMIN\",\n    \"name\": \"Teste\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "80d928bf-72a3-45d8-840a-375b4fbc5ed5",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "6c572fa5-13c5-4ccc-8cb2-6683b8ef6cb7",
+            "name": "Create",
+            "url": "http://localhost:8080/public/status",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-24T10:30:00.554Z",
+            "modified": "2024-08-24T10:31:47.387Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Teste\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI2Mzh9.9Lzk-1mEkO2Lx8bVQjYP6mKiWhgLNR-1dJx8EAfx2O8"
+            }
+        },
+        {
+            "_id": "2d4fd55b-8f02-4aab-ba1e-f028d5271327",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "fb953a19-af79-44ca-b54b-ee63861e9549",
+            "name": "List",
+            "url": "http://localhost:8080/tasks",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-08-23T02:40:46.153Z",
+            "modified": "2024-08-24T10:35:03.177Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI4OTh9.koXd2CMN4ESa9WeuYXGyZgBD6gABIhh-R5Mc-uN2pYY"
+            }
+        },
+        {
+            "_id": "fb012f45-714d-4184-8869-83fc925e4b9b",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "fb953a19-af79-44ca-b54b-ee63861e9549",
+            "name": "Create",
+            "url": "http://localhost:8080/tasks",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-08-23T02:42:21.244Z",
+            "modified": "2024-08-24T11:17:56.175Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Estudar Java\",\n  \"description\": \"4 Pilares do POO\",\n  \"status\": \"Pendente\",\n  \"deadline\": \"2024-12-31\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJhdWd1c3RvQHRlc3RlLmNvbSIsImV4cCI6MTcyNDUwNTQ2MH0.flvGV9PpHQSPcaR9oANCfx8dhiI3dj8JI__cuFESWxg"
+            }
+        },
+        {
+            "_id": "e8f575c1-e9a1-4c44-ae98-b2a30bb9a522",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "fb953a19-af79-44ca-b54b-ee63861e9549",
+            "name": "Search",
+            "url": "http://localhost:8080/tasks/1",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-08-24T10:35:13.627Z",
+            "modified": "2024-08-24T10:35:19.719Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI4OTh9.koXd2CMN4ESa9WeuYXGyZgBD6gABIhh-R5Mc-uN2pYY"
+            }
+        },
+        {
+            "_id": "7220d832-3f7f-4fa3-8db2-9bbacce6b5b7",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "fb953a19-af79-44ca-b54b-ee63861e9549",
+            "name": "Update",
+            "url": "http://localhost:8080/tasks/1",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-08-24T10:35:29.162Z",
+            "modified": "2024-08-24T10:35:41.411Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Estudar Java\",\n  \"description\": \"4 Pilares do POO\",\n  \"status\": \"Pendente\",\n  \"deadline\": \"2024-12-31\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI4OTh9.koXd2CMN4ESa9WeuYXGyZgBD6gABIhh-R5Mc-uN2pYY"
+            }
+        },
+        {
+            "_id": "69b850ea-169a-432a-944d-9c25da9bd48e",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "6c572fa5-13c5-4ccc-8cb2-6683b8ef6cb7",
+            "name": "Update",
+            "url": "http://localhost:8080/public/status/4",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-08-24T10:31:17.397Z",
+            "modified": "2024-08-24T10:32:54.719Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Em espera\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI2Mzh9.9Lzk-1mEkO2Lx8bVQjYP6mKiWhgLNR-1dJx8EAfx2O8"
+            }
+        },
+        {
+            "_id": "6c48f82e-a46f-46ec-af67-45e8f02bdb8f",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "fb953a19-af79-44ca-b54b-ee63861e9549",
+            "name": "Delete",
+            "url": "http://localhost:8080/tasks/1",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-08-24T10:35:50.517Z",
+            "modified": "2024-08-24T11:19:04.834Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDU1MzF9.uJgtXfMJbmGpEpZ5PsMj3btJGyGgam7QKqflNRT154U"
+            }
+        },
+        {
+            "_id": "0d61c35d-d7ec-4e31-a784-c8e690d13e31",
+            "colId": "ca89c4ab-9c6d-47b6-92c0-61e5810a7f54",
+            "containerId": "6c572fa5-13c5-4ccc-8cb2-6683b8ef6cb7",
+            "name": "Delete",
+            "url": "http://localhost:8080/public/status/4",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-08-24T10:33:11.965Z",
+            "modified": "2024-08-24T10:33:22.025Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjcDQiLCJzdWIiOiJ0ZXN0ZUB0ZXN0ZS5jb20iLCJleHAiOjE3MjQ1MDI2Mzh9.9Lzk-1mEkO2Lx8bVQjYP6mKiWhgLNR-1dJx8EAfx2O8"
+            }
+        }
+    ],
+    "ref": "wi-qbpAH7pQxKNawovfDFS83o9vOxApgetLq6_EP5BmdAGaz7cSrF9DIQQmmAjo06hDk_4nnqWQfQbtO2xm_WQ"
+}

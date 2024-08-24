@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E413C03A-70E9-709B-8BA7-FB886A453F25" name="Estudante">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:42:20 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_estudante" id="94FC71F7-B7A7-95B5-21B7-686B6F751E6B">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:43:19 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="A823874D-2D96-01A4-56BB-BB40A76855A6">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:43:22 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="BD170276-B303-5C2B-ABEC-D472444BBD0D">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:43:25 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefone" id="DA458A60-75C7-3D8D-72FA-04DAE68F6BEB">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:43:27 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_curso" id="1B298A3B-02E5-C8BA-D91C-58EFD7BFC7C6">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:47:16 UTC</createdTime>
+<generatorID>0F0838AA-ED9D-3F18-C7D1-51A7704A2B1B</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="true"/>
+</engineerTo>
+<referedAttribute>1702C602-9C77-E279-E000-8FA7A07BDA6A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F4883755-C697-8AB9-50C1-F2B0F58AD341" name="Estudante PK">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:48:27 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69E89835-C098-9D47-E04D-72AE84721723" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>94FC71F7-B7A7-95B5-21B7-686B6F751E6B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

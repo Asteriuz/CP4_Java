@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE5459AD-C432-B1C0-7A45-C01DDB44F1CC" name="SalaDeAula">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>13C89E55-2F88-2E17-74DC-2AC68049B2B7</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_sala_de_aula" id="EE6826EA-52D2-2263-FB49-9BA94141F949">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>BF3A154B-79A7-D2CB-40E3-AF875B5ECB15</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="126203EC-B2DF-5620-E430-6130E9DAAA94">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>DF898822-F83F-DF2A-A11A-93E38393244C</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacidade" id="8562BB05-24AE-AC84-DFC9-96F478AE08F2">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>B260B197-85F6-1E24-D208-98760255692D</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Curso_cd_curso" id="902970CC-E7E5-AE10-46DE-05E8FD62ABE8">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>B4F0F3E4-CCD0-64ED-B96C-3ADF3651ACAE</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9844562E-A817-6A7A-2AB9-678DA18B3B9C" referredColumn="BCB4F159-C74D-0D67-ABEF-1DE8D1548000"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8B4FA3A-635D-C81C-5FD1-7498BFFBE624" name="SalaDeAula_PK">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>E70CBE99-817D-DD4C-1890-81597D370399</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE6826EA-52D2-2263-FB49-9BA94141F949"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57D49E66-328E-8049-BD5E-382FD0ABE57B" name="SalaDeAula__IDX">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A41A5AED-3981-2B71-68C3-B61E415004D0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="902970CC-E7E5-AE10-46DE-05E8FD62ABE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="050ABAFF-E4D4-86C0-435B-23DEFF66777F" name="SalaDeAula_Curso_FK">
+<createdBy>augus</createdBy>
+<createdTime>2024-05-05 12:52:59 UTC</createdTime>
+<generatorID>A41A5AED-3981-2B71-68C3-B61E415004D0</generatorID>
+<ownerDesignName>datamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="902970CC-E7E5-AE10-46DE-05E8FD62ABE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
